@@ -1,10 +1,11 @@
-pipeline {
+pipeline{
     agent any
     stages{
-        stage('build'){
+        stage('defvari'){
             steps{
                 script{
-                    println "Welcome"
+                    var2=20
+                    println "my var value is ${var2}"
                 }
             }
         }
